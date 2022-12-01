@@ -1,11 +1,11 @@
-module.exports = {
-    consumer_key: 'soni_pandey',
-    secret_key: 'e7zjz7ZN2U4ZRhfV3WpwPA',
-    base_url: 'https://schoolwebsite.org/campus/oneroster/schoolName/learningdata/v1/schools',
-    method: 'GET',
-    queryParameters: {
-                        offset:0,
-                        limit:100,
-                        filter:"status='active'"
-    }
+const Config = {
+    consumer_key: process.env.CONSUMER_KEY,
+    token: process.env.BOT_TOKEN,
+    base_url: 'https://api.twitter.com/2/tweets',
+    method: 'POST',
+    consumer_secret: process.env.CONSUMER_SECRET,
+    token_secret: process.env.BOT_TOKEN_SECRET,
+
 }
+
+export default Config;
