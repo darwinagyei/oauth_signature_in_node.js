@@ -5,7 +5,6 @@ const Config = {
     method: 'POST',
     consumer_secret: process.env.CONSUMER_SECRET,
     token_secret: process.env.BOT_TOKEN_SECRET,
-
 }
 
 export default Config;
